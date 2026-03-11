@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol Lanches - Faça seu Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sol Lanches</h1>
+        <p>Bem-vindo! Escolha seus lanches favoritos e faça o pedido.</p>
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="item">
+            <h3>Hambúrguer Clássico</h3>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('Hambúrguer Clássico', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Batata Frita</h3>
+            <p>R$ 8,00</p>
+            <button onclick="adicionarAoCarrinho('Batata Frita', 8)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Refrigerante</h3>
+            <p>R$ 5,00</p>
+            <button onclick="adicionarAoCarrinho('Refrigerante', 5)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Salada</h3>
+            <p>Pão, Alface, Tomate, Queijo, Hambúrguer, Batata Palha e Molho</p>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('X-Salada', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Buguer</h3>
+            <p>Pão, Hambúrguer, Molho, Queijo e Batata Palha</p>
+            <p>R$ 12,00</p>
+            <button onclick="adicionarAoCarrinho('X-Buguer', 12)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Duplo</h3>
+            <p>Pão, Alface, Molho, Dois Hambúrgueres, Queijo e Batata Palha</p>
+            <p>R$ 18,00</p>
+            <button onclick="adicionarAoCarrinho('X-Duplo', 18)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Egg</h3>
+            <p>Pão, Alface, Tomate, Queijo, Molho, Ovo e Hambúrguer</p>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('X-Egg', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Bacon</h3>
+            <p>Pão, Alface, Tomate, Queijo, Bacon, Molho, Ovo e Batata Palha</p>
+            <p>R$ 22,00</p>
+            <button onclick="adicionarAoCarrinho('X-Bacon', 22)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Calabresa</h3>
+            <p>Pão, Alface, Tomate, Queijo, Calabresa, Molho, Batata Palha, Hambúrguer</p>
+            <p>R$ 20,00</p>
+            <button onclick="adicionarAoCarrinho('X-Calabresa', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Frango</h3>
+            <p>Pão, Alface, Molho, Frango Grelhado, Queijo, Batata Palha, Hambúrguer</p>
+            <p>R$ 25,00</p>
+            <button onclick="adicionarAoCarrinho('X-Frango', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Tudo</h3>
+            <p>Pão, Alface, Molho, Queijo, Tomate, Bacon, Calabresa, 2 Hambúrgueres, Batata Palha, Ovo, Frango</p>
+            <p>R$ 32,00</p>
+            <button onclick="adicionarAoCarrinho('X-Tudo', 32)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Forminha</h3>
+            <p>Pão, Alface, Molho, Queijo, Tomate, Bacon, Calabresa, 2 Hambúrgueres, Batata Palha, Ovo, Cheddar, Catupiry, Frango</p>
+            <p>R$ 40,00</p>
+            <button onclick="adicionarAoCarrinho('X-Forminha', 40)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>X-Calabacom</h3>
+            <p>Pão, Hambúrguer, Molho, Queijo e Batata Palha, Calabresa, Bacon</p>
+            <p>R$ 25,00</p>
+            <button onclick="adicionarAoCarrinho('X-Calabacom', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Hot Dog Tradicional</h3>
+            <p>Pão, Salsicha, Molho, Batata Palha</p>
+            <p>R$ 10,00</p>
+            <button onclick="adicionarAoCarrinho('Hot Dog Tradicional', 10)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Hot Dog Especial</h3>
+            <p>Pão, Salsicha, Molho, Queijo, Batata Palha</p>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('Hot Dog Especial', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Hot Dog Marmita</h3>
+            <p>Pão, 2 Salsichas, Molho, Calabresa, Cheddar, Queijo e Bacon, Batata Palha</p>
+            <p>R$ 30,00</p>
+            <button onclick="adicionarAoCarrinho('Hot Dog Marmita', 30)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Pastel (Carne, Queijo)</h3>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('Pastel (Carne, Queijo)', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Pastel (Carne com Queijo, Pizza)</h3>
+            <p>R$ 20,00</p>
+            <button onclick="adicionarAoCarrinho('Pastel (Carne com Queijo, Pizza)', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Coca Lata</h3>
+            <p>R$ 8,00</p>
+            <button onclick="adicionarAoCarrinho('Coca Lata', 8)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Guaraná Lata</h3>
+            <p>R$ 8,00</p>
+            <button onclick="adicionarAoCarrinho('Guaraná Lata', 8)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Coca 2L</h3>
+            <p>R$ 18,00</p>
+            <button onclick="adicionarAoCarrinho('Coca 2L', 18)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="item">
+            <h3>Guaraná 2L</h3>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('Guaraná 2L', 15)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: R$ <span id="total">0</span></p>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </section>
+
+    <section id="pedido">
+        <h2>Finalizar Pedido</h2>
+        <form id="form-pedido">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+            
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
